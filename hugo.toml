@@ -1,4 +1,15 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://satouyuuki.github.io/shafu_blog/'
+title = 'shafuブログ'
 theme = 'ananke'
+
+defaultContentLanguage = 'ja'
+# defaultContentLanguageInSubdir = true
+[languages]
+  [languages.en]
+    languageName = 'English'
+    title = "shafu's blog"
+    weight = 2
+  [languages.ja]
+    languageName = 'Japanese'
+    title = 'shafuブログ'
+    weight = 1
