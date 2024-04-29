@@ -1,4 +1,5 @@
 baseURL = 'https://shafu-life.win/'
+relativeURLs = true
 title = 'shafuブログ'
 theme = 'ananke'
 
