@@ -1,15 +1,15 @@
 +++
-title = 'HugoとGithub Pagesで作ったブログににカスタムドメインを設定した'
+title = 'HugoとGithub Pagesで作ったブログにカスタムドメインを設定した'
 date = 2024-04-29T13:38:18+09:00
 draft = false
 +++
 
-## HugoとGithub Pagesで作ったブログににカスタムドメインを設定しました
+## HugoとGithub Pagesで作ったブログにカスタムドメインを設定しました
 
 ### 大まかな流れ
 1. ドメインを購入する
-2. github pagesにドメインを検証する
-3. github pagesの設定してるリポジトリにcustom domainを設定する
+2. ドメインにTXTレコードを追加してドメインを検証する
+3. ドメインにCNAMEとAレコードを追加してcustom domainを設定する
 4. hugoのconfigファイルを修正する
 
 ### ドメインを購入する
@@ -18,7 +18,7 @@ draft = false
 
 > ※注意点として楽天クレジットで購入しようとすると2024年4月29日時点では不正利用と誤検知されて購入に失敗します。電話かチャットボットに問い合わせてセキュリティを緩める必要があるのですがどうにかならないですかね。。
 
-### github pagesの設定してるリポジトリにcustom domainを設定する
+### ドメインにTXTレコードを追加してドメインを検証する
 
 以下のドキュメント通りに進めます
 [Verifying your custom domain for GitHub Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages)
@@ -34,7 +34,7 @@ $ dig _github-pages-challenge-satouyuuki.shafu-life.win +nostats +nocomments +no
 _github-pages-challenge-satouyuuki.shafu-life.win. 300 IN TXT "<設定した値>"
 ```
 
-### github pagesにcustom domainを設定する
+### ドメインにCNAMEとAレコードを追加してcustom domainを設定する
 
 以下のドキュメント通りに進めます
 [Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
