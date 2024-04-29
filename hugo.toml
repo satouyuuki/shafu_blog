@@ -14,3 +14,7 @@ defaultContentLanguage = 'ja'
     languageName = 'Japanese'
     title = 'shafuブログ'
     weight = 1
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-ZH13H1QRE6'
